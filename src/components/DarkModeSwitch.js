@@ -3,10 +3,10 @@ import darkLightImg from './—Pngtree—dark mode icon light png_6661697.png'
 
 export default function DarkModeSwitch(props) {
     let handleChange = () => {
-        if(props.mode === "black")
+        if(props.mode === "rgb(33, 33, 33)")
         props.setMode("bisque");
         else
-        props.setMode("black");
+        props.setMode("rgb(33, 33, 33)");
         console.log(props.mode);
     }
     return (<>

@@ -5,7 +5,7 @@ import Navbar from "./components/Navbar";
 
 function App() {
   const [mode, setMode] = useState("bisque");
-  document.documentElement.style.backgroundColor = {mode};
+  document.body.style = `background: ${mode}`;
   console.log(mode);
   return (
   <>
