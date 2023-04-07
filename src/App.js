@@ -1,6 +1,7 @@
 import { useState } from "react";
 import CalcBody from "./components/CalcBody";
 import Navbar from "./components/Navbar";
+import { Link, BrowserRouter as Router, Route, Switch, Routes } from "react-router-dom";
 
 
 function App() {
@@ -8,10 +9,14 @@ function App() {
   document.body.style = `background: ${mode}`;
   console.log(mode);
   return (
-  <>
-    <Navbar mode = {mode} setMode = {setMode}/>
-    <CalcBody mode = {mode} setMode = {setMode}/>
-  </>
+    <>
+      {/* <Router> */}
+        <Navbar mode={mode} setMode={setMode} />
+        {/* <Route element="<CalcBody />"> */}
+        <CalcBody mode={mode} setMode={setMode} />
+        {/* </Route> */}
+      {/* </Router> */}
+    </>
   );
 }
 
